@@ -59,7 +59,7 @@ export class AppRoutingModule {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        gtag('config', 'UA-165692234-4', {
+        gtag('config', 'UA-165692234-8', {
           page_path: event.urlAfterRedirects,
         });
       }
